@@ -1,11 +1,10 @@
-numcake = 20
+numcake = 0  # Default value
 
-def make_cupcakes():
-    global numcake
-    if numcake:
-        print(f"Manufacturing {numcake} blue cupcakes!")
-    else:
-        print("Error: No number of cupcakes provided.")
+def blue(numcake):
+    print(f"Making {numcake} blue cupcakes... 🧁")
+    print("Baking...")
+    print("Applying frosting...")
+    print("Blue cupcakes are ready! 🎉")
 
 if __name__ == "__main__":
-    make_cupcakes()
+    blue(numcake)
